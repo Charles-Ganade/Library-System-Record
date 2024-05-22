@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Log In</title>
+        <style>
+            :root {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #bbb;
+
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+            }
+            main {
+                display: flex;
+                background-color: white;
+                padding: 5rem;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                gap: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- name, yr section, agenda -->
+        <main>
+            <form action="/new-user" method="post">
+                <label for="name">Name</label>
+                <input type="text" name="name" value="" required id="name" />
+                <label for="name">Year and Section</label>
+                <input type="text" name="yrsec" value="" required id="yrsec" />
+                <label for="name">Purpose</label>
+                <input
+                    type="text"
+                    name="purpose"
+                    value=""
+                    required
+                    id="purpose"
+                />
+                <input type="submit" value="Submit" />
+            </form>
+        </main>
+    </body>
+</html>
